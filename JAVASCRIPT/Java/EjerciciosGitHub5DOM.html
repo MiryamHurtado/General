@@ -1,0 +1,180 @@
+<!--Exercise 1
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+  </head> 
+  <script src = "EjerciciosGitHubDOM.html"></script>
+  
+  <body>
+    <p id="text">JavaScript Exercises #1</p> 
+    <div>
+      <script > function js_style(){ document.getElementById("text").style.color = "red";
+      document.getElementById("text").style.fontSize = "30px";
+      document.getElementById("text").style.fontFamily="verdana";
+      }
+      </script>    
+    </div>
+    <button id="jsstyle" onclick="js_style('red')">style</button>
+  </body>
+</html>-->
+
+<!--Exercise 2
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset=utf-8 />
+      <title>Return first and last name from a form - w3resource</title>
+    </head>
+    
+    <body>
+      <form id="form1" onsubmit="getFormvalue()">
+          First name: <input type="text" id ="fname" name="fname" value="David"><br>
+          Last name: <input type="text" id="lname" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+        <script>
+            var first = document.getElementById("fname").value;
+            var second = document.getElementById("lname").value;
+
+            console.log(first);
+            console.log(second);
+        </script>
+      </form>
+    </body>
+</html>-->
+
+<!--Exercise 3
+
+//Part One
+let x=15;
+
+while(x>=0){
+    console.log(x);
+    x -=0.5;
+
+}
+
+//Part Two
+/
+let oddnumbers=1
+
+while(oddnumbers<100){
+    console.log(oddnumbers);
+    oddnumbers += 2;
+
+}
+
+//PART THREE
+
+var w=1;
+let m='';
+while(w<=6){
+    m=m+"["+w+"]";
+    w++;
+}
+console.log(m);
+-->
+
+<!--Exercise 4-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="container2"></p>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul id="ul">
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol class="ol">
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+
+    </section>
+    <div class="footer">
+        <p>hola</p>
+    </div>
+    <script>
+        //Part One
+        //document.getElementById("container").style.fontSize = "20px"; 
+
+        function query() {
+
+            // Part two
+            //document.querySelector("#container").style.fontSize = "20px";
+
+            //Part three
+            // var x = document.querySelectorAll(".second"); //.style.fontSize = "40px";
+
+            // for (var i = 0; i < x.length; i++) {
+            //     x[i].style.color = "blue";
+            // }
+
+
+            // 4
+            // var y = document.querySelectorAll(".third");
+            // y[1].style.color = "red";
+
+            //5
+            //document.getElementById("container2").innerHTML = "Hello";
+
+            //6 
+            //var element = document.querySelector(".footer");
+            //element.classList.add("main");
+
+            //7
+            // var element = document.querySelector(".footer");
+            // element.classList.remove("main");
+
+            //8 
+            //var x = document.createElement("li");
+
+            //9
+            //var t = document.createTextNode("four");
+
+            //10
+            //x.appendChild(t);
+            //document.getElementById("ul").appendChild(x);
+
+            //Challenge Yourself.
+            //1
+            var x = document.querySelectorAll(".ol");
+
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.background = "green";
+            }
+
+            // 2
+            document.querySelector(".footer").remove();
+
+        }
+        query();
+
+
+    </script>
+
+</body>
+
+</html>

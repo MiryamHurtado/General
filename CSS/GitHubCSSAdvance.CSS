@@ -1,0 +1,11 @@
+
+  /* rectangulo que empieza en rojo*/
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }
+/* rectangulo que empieza en azul*/
+  @keyframes mymove2 {
+    from {background-color: blue;}
+    to {background-color: red;}
+  }

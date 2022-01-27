@@ -1,0 +1,22 @@
+body {
+    margin:50px ;
+    padding: 30px;
+    background: linear-gradient(to right, rgb(172, 172, 248), rgb(238, 209, 214) );
+    margin-right: 100px;
+    text-align: center;
+    font-size: 20px
+
+}
+
+h1 {
+    background-color: blueviolet;
+    font-size: 60px;
+}
+table {
+    border: solid black;
+    margin: 50px;
+}
+td,th {
+    border: solid black;
+}
+
